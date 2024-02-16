@@ -14,7 +14,8 @@ pushd build-android-armv7
 cmake -DCMAKE_TOOLCHAIN_FILE=$ANDROID_NDK/build/cmake/android.toolchain.cmake -DANDROID_ABI="armeabi-v7a" -DANDROID_ARM_NEON=ON -DANDROID_PLATFORM=android-19 -DNCNN_VULKAN=ON ..
 make -j4
 make install
-popd
+
+
 
 ##### android aarch64
 mkdir -p build-android-aarch64
